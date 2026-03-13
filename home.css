@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: yellow;
+}
+
+.Header{
+    height: 10vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-header{
+    padding: 2px;
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color:red;
+    border-radius: 10px;
+    border: solid black 5px;
+}
+
+#game-heading{
+    color: white;
+    font-size: 6vh;
+}
+
+.Box{
+    height: 28%;
+    width: 28%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(73, 12, 12);
+    font-size: 8vmin;
+    background-color: greenyellow;
+    color: white;
+    font-weight: bold;
+}
+
+container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+#game-box-middle{
+    height: 82vh;
+    width: 82vh;
+    background-color: rgb(240, 39, 133);
+    border-radius:10px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+    border: solid black 5px;
+}
+
+.main-box{
+    width: 65vh;
+    height: 82vh;
+    background-color:yellow;
+    margin-top: 20px;
+}
+
+#game-start-or-reset-box{
+    height: 350px;
+    width: 350px;
+    background-color: red;
+    margin-left: 50px;
+    border-radius: 10px;
+    padding: 50px;
+    border: solid black 5px;
+}
+
+#Player-detail-X{
+    height: 50px;
+    width: 280px;
+    background-color: black;
+    margin-left: -13px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+#Player-detail-O{
+    height: 50px;
+    width: 280px;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: -13px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.player-name{
+    color: white;
+    display: inline;
+}
+
+#Reset-btn{
+    background-color:green;
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+#Reset-btn-text{
+    color: white;
+    font-size: 40px;
+    transition: transform 12s;
+}
+
+#Reset-btn:hover{
+    transform: scale(1.1);
+}
+
+#Reset-btn:active{
+    background-color: lightgreen;
+}
+
+#Chance-indicator-X{
+    height: 35px;
+    width: 35px;
+    background-color:rgb(66, 222, 66);
+    margin-left: 35px;
+    margin-top: 3px;
+    border-radius: 16px;
+}
+
+#Chance-indicator-O{
+    height: 35px;
+    width: 35px;
+    background-color:black;
+    margin-left: 35px;
+    margin-top: 3px;
+    border-radius: 16px;
+}
+
+#Winning-msg{
+    height: 70vh;
+    width: 50vh;
+    background-color: rgb(188, 143, 211);
+    border-radius:10px;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    opacity: 0.9;
+}
+
+#Trophy{
+    width: 60%;
+    height: 50%;
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: black solid 5px;
+    overflow: hidden; 
+    box-shadow: 0px 0px 20px black;
+}
+
+#Image{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+#Winner-Text{
+    height: 10%;
+    width: 70%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+#winner-h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#Winner-player{
+    height: 10%;
+    width: 70%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    /* margin-top: 100px; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+
+#winner-player-h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#btn-new-game{
+    background-color:green;
+    width: 300px;
+    height: 50px;
+    margin-left: 25px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+#btn-new-game-text{
+    color: white;
+    font-size: 40px;
+    transition: transform 12s;
+}
+
+#btn-new-game:hover{
+    transform: scale(1.1);
+}
+
+#btn-new-game:active{
+    background-color: lightgreen;
+}
+
+.hide{
+   display: none !important;
+}
+
+
+.ani-box:hover{
+    transform: scale(1.1);
+}
+
