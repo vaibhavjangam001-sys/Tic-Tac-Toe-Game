@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+
+.Header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-header {
+  padding: 8px 100px;
+  background-color: red;
+  border-radius: 10px;
+  border: 4px solid black;
+}
+
+#game-heading {
+  color: white;
+  font-size: 38px;
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+
+.main-box {
+  width: 340px;
+}
+
+
+
+#game-start-or-reset-box {
+  width: 100%;
+  background-color: red;
+  border-radius: 10px;
+  padding: 40px;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+#Player-detail-X,
+#Player-detail-O {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  border-radius: 8px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-name {
+  color: white;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+
+#Chance-indicator-X,
+#Chance-indicator-O {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+#Chance-indicator-X {
+  background-color: rgb(66, 222, 66);
+}
+
+#Chance-indicator-O {
+  background-color: black;
+}
+
+
+#Reset-btn {
+  background-color: green;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+#Reset-btn-text {
+  color: white;
+  font-size: 28px;
+}
+
+#Reset-btn:hover {
+  transform: scale(1.05);
+}
+
+
+
+#game-box-middle {
+  height: 430px;
+  width: 430px;
+  background-color: rgb(240, 39, 133);
+  border-radius: 10px;
+  padding: 20px;
+  border: 4px solid black;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+
+  position: relative;
+}
+
+
+.Box {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  font-size: 48px;
+  background-color: greenyellow;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.2s ease;
+}
+
+
+
+#Winning-msg {
+  height: 360px;
+  width: 300px;
+  background-color: rgb(188, 143, 211);
+  border-radius: 10px;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  padding: 20px;
+  opacity: 0.95;
+}
+
+
+#Winner-Text,
+#Winner-player {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  text-align: center;
+}
+
+#winner-h1,
+#winner-player-h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+
+#Trophy {
+  width: 160px;
+  height: 140px;
+  border-radius: 10px;
+  border: 3px solid black;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px black;
+}
+
+#Image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+#btn-new-game {
+  background-color: green;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+#btn-new-game-text {
+  color: white;
+  font-size: 26px;
+}
+
+#btn-new-game:hover {
+  transform: scale(1.05);
+}
+
+
+.hide {
+  display: none !important;
+}
+
+
+#rules-box{
+background-color:red;
+border:4px solid black;
+border-radius:10px;
+padding:30px;
+width:100%;
+box-shadow:0px 0px 15px rgba(0,0,0,0.4);
+}
+
+
+#rules-heading{
+color:white;
+font-size:28px;
+text-align:center;
+margin-bottom:20px;
+}
+
+
+
+#rules-list{
+list-style:disc;
+padding-left:20px;
+}
+
+#rules-list li{
+color:white;
+font-size:18px;
+margin-bottom:10px;
+line-height:1.5;
+}
